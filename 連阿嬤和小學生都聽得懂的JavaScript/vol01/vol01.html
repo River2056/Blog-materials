@@ -1,0 +1,53 @@
+<h1 id="-javascript">連阿嬤和小學生都聽得懂的程式語言 - JavaScript</h1>
+<h2 id="-">前言</h2>
+<p>&lt;img src=&quot;./JavaScript_logo.png&quot; width=&quot;150&quot; /&gt;&lt;br/&gt;</p>
+<h3 id="-javascript-">什麼是JavaScript?</h3>
+<p>&nbsp;&nbsp;近年來由於科技的進步，資訊的發達，<strong>前端</strong>技術的崛起使的瀏覽器的語言，也就是 <strong>JavaScript</strong>，漸漸的被許多人接觸並認識。以JavaScript語言為基礎所產生出的相關技術也越來越多，甚至已經不在只侷限於瀏覽器裡面，<strong>後端</strong>的大型伺服器也能使用JavaScript寫程式去處理資料與控制流程。</p>
+<h3 id="-">什麼是前端，後端?</h3>
+<p>&nbsp;&nbsp;前面提到了前端，後端這兩個專業名詞，相信新手們一定很霧煞煞：到底前端、後端是什麼呢?</p>
+<ul>
+<li>前端📱</li>
+</ul>
+<p>&nbsp;&nbsp;凡是跟人們接觸距離最近的，都可以算是前端。例如網頁、每天在看的手機、電腦等等，都算是前端裝置。前端技術就是我們看到網頁裡那些花裡胡哨的動畫，點了某個選項會有相應的動畫彈出，淡出，滑入，飛出等等。頁面很漂亮的編排也屬於前端，比較偏設計的部分。<strong>前端的程式比較偏向於畫面的呈現。</strong></p>
+<ul>
+<li>後端📊</li>
+</ul>
+<p>&nbsp;&nbsp;架在遠端的伺服器，或是後台在處理資料的，都算後端。例如當我們逛購物網站，按下購買時，資料會傳送到那個網站的伺服器去做處理。伺服器裡的程式這時候會去判斷你購買了多少，花多少錢，是否是帳號本人，以及根據你提供的銀行卡號，向相關的銀行發出扣款的請求等等。<strong>後端的程式比較便向於資料與邏輯的處理。</strong></p>
+<p>&nbsp;&nbsp;聊玩了前後端，回到我們主題 - <strong>JavaScript</strong>。<br>&nbsp;&nbsp;JavaScript(後面簡稱<strong>JS</strong>)，從只能在瀏覽器裡做一些小動畫，到現在連後端都能用，簡直快稱霸世界了(笑)。以前的工程師如果要做到全端(也就是前端 + 後端)，除了前端語言要會之外(HTML + CSS + JS，前面兩個後面會提到)，還得學會後端的語言，像是PHP，Java，Python等等。現在的你完全可以只用JS，就做到全端工程師，加上一點部屬網頁的知識，從無到有生成一個網站已經難不倒你了。</p>
+<p>&nbsp;&nbsp;JS在學習上也很簡單，語法簡潔易懂，後期推出的ES6版本(亦稱ES2015)，更是讓工程師少敲了好幾個字，非常的方便。<br>以前我們寫一個 function 可能長這樣：</p>
+<pre><code class="lang-javascript">function doSomething() {
+    // 我們要做的事...
+    console.log(&#39;你的程式邏輯...&#39;);🤨
+}
+</code></pre>
+<p>經過了ES6的洗禮之後，變成這樣：</p>
+<pre><code class="lang-javascript">const doSomething = () =&gt; {
+    // 要做的事放這...
+    console.log(&#39;程式邏輯...&#39;);😮
+};
+</code></pre>
+<p>發現了嗎? <strong>function</strong> 這個關鍵字直接整個省略，變成一組括號，以及一個箭頭 <strong>=&gt;</strong>，是不是少敲了好多個字(笑)。當然，這不是唯一的改變，還有很多方便的功能等著我們去探索。</p>
+<h3 id="javascript-">JavaScript到底能做什麼呢?🤔</h3>
+<p>&nbsp;&nbsp;前面講到了JS把前後端全包了，功能強大，語法簡單易懂、好學等等優點。但是說了那麼多，大家應該比較關心JS到底能做什麼吧? 我們來聊一些比較實際的應用吧。</p>
+<p>&lt;img src=&quot;./portfolio.png&quot; width=&quot;500&quot; /&gt;&lt;br/&gt;</p>
+<ol>
+<li>JS能讓你做網頁</li>
+</ol>
+<p>&nbsp;&nbsp;JS本來就是瀏覽器的語言，所以老本行的網頁當然是沒問題的。各式各樣的頁面特效、頁面彈窗、動畫、簡單的表單驗證、各種按鈕行為、以及動態的根據資料顯示頁面等等(最後這項非常有趣，也是前端技術崛起的基礎)。也由於JS的進步，網頁已漸漸進化成網頁應用程式(Web App)，讓使用者不用安裝任何軟體，直接透過瀏覽器就能有使用軟體的效果，使用體驗也非常好，速度快。不用安裝軟體這項優勢，讓WebApp漸漸的取代以往的使用習慣，著名的例子有Gmail、Facebook、Youtube等等。雖然這些服務還是有自己專屬App，不過既使不安裝App，也能直接透過瀏覽器使用這些服務，且效果不輸專屬App。</p>
+<p>&lt;img src=&quot;./ElectronJS.png&quot; width=&quot;600&quot; /&gt;&lt;br/&gt;</p>
+<ol start="2">
+<li>想開發傳統桌面應用程式(Desktop App)? 沒問題，JS可以幫你搞定</li>
+</ol>
+<p>&nbsp;&nbsp;用Windows的朋友應該非常有經驗：點開安裝檔，接著只要一直按下一步完成安裝，就能開始使用軟體了。JS當然也能讓你開發這種軟體。透過一些著名的套件將程式打包，成為一種跨平台的桌面應用程式。沒錯。你沒看錯，是跨平台：也就是說你的程式將能同時在Windows以及MacOS上執行，而不用再調整已經寫好的程式。以往想要兩個作業系統都吃，你得會使用兩種語言，現在你只需要了解一種，也就是JS。能夠將JS打包成桌面應用程式的套件，著名的有：EletronJS、NW.JS、AppJS、Meteor等等。</p>
+<p>&lt;img src=&quot;./react_native_instagram.png&quot; width=&quot;500&quot; /&gt;&lt;br/&gt;</p>
+<ol start="3">
+<li>想開發近期很夯的行動應用(Mobile App)? 交給JS  </li>
+</ol>
+<p>&nbsp;&nbsp;比起電腦裡的程式，現代人大部分應該比較常用手機，對AppStore(蘋果的應用商城)和Google Play(Google的應用商城)也比較熟。想開發下一款熱門排行App嗎?還是想做琳瑯滿目的遊戲?會JS的話，這塊領域你也能包辦。你知道你每天在用的Instagram、Facebook行動App，是用什麼開發的嗎?它們是用一個叫做 <strong>React Native</strong>的框架開發的。那你知道React Native是用什麼語言寫的嗎?你沒猜錯，就是JS。<br>&nbsp;&nbsp;使用React Native開發出來的App，一樣具有跨平台的特性：一般iOS的開發者使用的是Objective-C或是Swift開發，Android開發者則是使用Java或是Kotlin等等。如果要兩個平台通吃，同一種App必須使用兩種不同的語言撰寫，就跟上面提到的桌面應用程式一樣；對應不同的作業系統，你得分別使用它們使用的語言去做開發，React Native則完全沒有這個問題，讓你只寫一次code，就能適應各種平台。順帶一提，React Native是由React所衍生出來的框架，發明這個框架的團隊正是Facebook。</p>
+<p>&lt;img src=&quot;./tensorflowJS.png&quot; width=&quot;500&quot; /&gt;&lt;br/&gt;</p>
+<ol start="4">
+<li>近期很夯的人工智慧(AI)，機器學習等等，對你沒猜錯，JS也能做</li>
+</ol>
+<p>由Google推出的TensorFlow.js，就是很著名的機器學習的套件。讓你的模型學習怎麼透過手機辨識人臉，或是使用臉部表情不控制小精靈在迷宮中移動<br>&lt;!-- ![pacman-小精靈](./pacman.png)   --&gt;<br>&lt;img src=&quot;./pacman.png&quot; width=&quot;450&quot; /&gt;&lt;br/&gt;<br><em>大家而熟能詳的小精靈遊戲</em></p>
+<p>&lt;img src=&quot;./react_native_face.gif&quot; width=&quot;200&quot; /&gt;&lt;br/&gt;<br><em>使用手機鏡頭臉部辨識</em></p>
+<p>&nbsp;&nbsp;看到這裡你可能會覺得我把JS神化了，真的有這麼誇張嗎?這麼厲害?<br>&nbsp;&nbsp;沒錯，就是這麼厲害，不用懷疑。<br>&nbsp;&nbsp;不管是誰，都希望自己做的任何投資會有回報，最好是小投資大回報那種。邁向21世紀這個資訊的年代，會一點程式設計絕對是有益無害的，而且這也是未來的趨勢。我都會跟別人推薦這門程式語言，尤其是初學者，原因很簡單，因為花時間投資自己學習JS，絕對是小投資大回報👍</p>
